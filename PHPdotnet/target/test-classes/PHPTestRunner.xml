@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PHP" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Win"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="60.0.3112.101"/>
+    <parameter name="url" value="http://php.net"/>
+
+    <test name = "PHP Home">
+        <classes>
+            <class name ="testphphome.TestPHPHome"/>
+        </classes>
+    </test>
+</suite>
